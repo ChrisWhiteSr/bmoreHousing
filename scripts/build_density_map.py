@@ -5,7 +5,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 import requests
 
-ROOT=Path('/home/varmint/Code/baltimore-housing-density')
+ROOT=Path(__file__).resolve().parents[1]
 DB=ROOT/'data/housing_1960_2006.db'
 OUT=ROOT/'site/index.html'
 POINTS_JSON=ROOT/'site/density_cells.json'
